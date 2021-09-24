@@ -13,3 +13,8 @@
   padding: 0px;
   margin: 0px;
 }
+
+.container .pagination{
+  margin-bottom: 20px;
+  text-align: center;
+}
