@@ -1,0 +1,15 @@
+.container .zitate h5{
+  background-color: gray;
+  margin-bottom: 0px;
+}
+
+.container .zitate p{
+  background-color: #efa;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
