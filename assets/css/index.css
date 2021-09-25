@@ -1,3 +1,12 @@
 .container .text p{
-  font-size: 20px;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.container .icon i{
+  color: orange;
+}
+
+.container .header h2{
+  margin-bottom: 60px;
 }

@@ -10,30 +10,49 @@
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="icon" href="assets/img/favicon-16x16.png">
 	<title>Kurt Katrini | Startseite</title>
 
 	<body>
+		<!-- navbar -->
 		<nav>
-			<div class="nav-wrapper orange">
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
+			<div class="nav-wrapper orange"> <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="left hide-on-med-and-down">
 					<li class="active"><a href="index.html">Startseite</a></li>
-					<li><a href="#" onclick="unavailable();">Zitate</a></li>
+					<li><a href="zitate/p1.html">Zitate</a></li>
 					<li><a href="#" onclick="unavailable();">Galerie</a></li>
+					<li><a href="#" onclick="unavailable();">Geschichte</a></li>
 				</ul>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="#" onclick="unavailable();">Impressum</a></li>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="impressum.html">Impressum</a></li>
 				</ul>
 			</div>
 		</nav>
+		<ul class="sidenav" id="mobile-demo">
+			<li class="active"><a href="index.html">Startseite</a></li>
+			<li><a href="zitate/p1.html">Zitate</a></li>
+			<li><a href="#" onclick="unavailable();">Galerie</a></li>
+			<li><a href="#" onclick="unavailable();">Geschichte</a></li>
+			<div class="divider"></div>
+			<li><a href="impressum.html">Impressum</a></li>
+		</ul>
+		<!-- navbar -->
 		<div class="container">
 			<div class="header center">
-				<h2>Kurt Katrini - Website</h2>
-			</div>
+				<h2>Kurt Katrini - Website</h2> </div>
+			<div class="icon center"> <i class="medium material-icons">info</i> </div>
 			<div class="text center">
-				<p>Diese Seite handelt von Kurt Katrini seinem gesamtem Leben. <br /> Hier finden Sie Zitate, Bilder und Sonstiges.</p>
+				<p>Diese Seite handelt von Kurt Katrini seinem gesamtem Leben.
+					<br /> Hier finden Sie Zitate, Bilder und Sonstiges.</p>
 			</div>
 		</div>
 		<script src="assets/js/footer.js"></script>
+		<script src="assets/js/jquery-latest.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+		});
+		</script>
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 		<script src="assets/js/popup.js"></script>
 		<!--JavaScript at end of body for optimized loading-->

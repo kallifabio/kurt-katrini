@@ -1,0 +1,7 @@
+.container .text p{
+  font-size: 20px;
+}
+
+.container .text .headline{
+  text-decoration: underline;
+}
